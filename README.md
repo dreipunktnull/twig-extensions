@@ -20,6 +20,15 @@ Convert HTML fragments to text with [html2text](https://github.com/soundasleep/h
 $twig->addExtension(new Html2TextExtension());
 ```
 
+or, if you use Symfony, tag a new service as `twig.extension`:
+
+```yaml
+twig.extension.html2text:
+    class: DPN\TwigExtensions\Extensions\Html2TextExtension
+    tags:
+        - { name: twig.extension }
+```
+
 ### Usage (Twig Filter)
 
 ```jinja2

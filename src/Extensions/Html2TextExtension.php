@@ -10,7 +10,7 @@ class Html2TextExtension extends AbstractExtension
     public function getFilters()
     {
         return [
-            new TwigFilter('html2text', [$this, 'html2text']),
+            new TwigFilter('html2text', [$this, 'html2text'], ['is_safe' => ['html']]),
         ];
     }
 
