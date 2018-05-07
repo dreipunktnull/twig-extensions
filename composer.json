@@ -1,0 +1,20 @@
+{
+    "name": "dreipunktnull/twig-extensions",
+    "description": "Useful twig extensions.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cedric Ziel",
+            "email": "ziel@dreipunktnull.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "DPN\\TwigExtensions\\": "src/"
+        }
+    },
+    "require": {
+        "soundasleep/html2text": "^0.5.0"
+    }
+}
